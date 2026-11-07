@@ -80,7 +80,7 @@ function Jobs() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/applications/submit",
+                "https://smart-placement-platform1-backend.onrender.com/api/applications/submit",
                 application,
                 {
                     headers: {

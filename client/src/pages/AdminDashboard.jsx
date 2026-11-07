@@ -24,7 +24,7 @@ function AdminDashboard() {
 
             try {
                 const response = await axios.get(
-                    "http://localhost:5000/api/applications/all",
+                    "https://smart-placement-platform1-backend.onrender.com/api/applications/all",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -61,7 +61,7 @@ function AdminDashboard() {
             setUpdating(id);
 
             const response = await axios.put(
-                `http://localhost:5000/api/applications/update-status/${id}`,
+                `https://smart-placement-platform1-backend.onrender.com/api/applications/update-status/${id}`,
                 { status },
                 {
                     headers: {

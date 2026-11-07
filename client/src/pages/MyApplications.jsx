@@ -22,7 +22,7 @@ function MyApplications() {
 
             try {
                 const response = await axios.get(
-                    "http://localhost:5000/api/applications/my",
+                    "https://smart-placement-platform1-backend.onrender.com/api/applications/my",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`

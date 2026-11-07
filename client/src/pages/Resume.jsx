@@ -32,7 +32,7 @@ function Resume() {
 
             try {
                 const response = await axios.get(
-                    "http://localhost:5000/api/profile",
+                    "https://smart-placement-platform1-backend.onrender.com/api/profile",
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
